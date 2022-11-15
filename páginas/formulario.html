@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Márcia Elizia Peruchi">
+    <meta name="description" content="Venda de peças artesanais feitas de crochês">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script defer src="../script/script.js"></script>
+    <title>Crochês da Márcia</title>
+    <link rel="shortcut icon" href="../images/logoCroche3.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <article>
+            <section>
+                <a href="../index.html">
+                    <img src="../images/logoCroche3.png" alt="Crochês da Márcia">
+                    <p>Crochês da Márcia</p>
+                </a>
+            </section>
+        </article>
+        <nav id="nav">
+            <button id="btnMobile">
+                <img id="iconMenu" src="../images/menu2.png" alt="menu">
+            </button>
+            <ul id="menu">
+                <li> 
+                    <a href="../index.html">INÍCIO</a>
+                </li>             
+                <li> 
+                    <a href="./páginas/formulario.html">ENCOMENDAR</a>
+                </li> 
+                <li> 
+                    <a id="contato">CONTATO</a>
+                </li>             
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form autocomplete="off" action="https://formsubmit.co/dhyanairis@gmail.com" method="POST">
+            <h1>Faça sua Encomenda</h1>
+                <label for="nome">
+                    Nome
+                </label>
+                <input type="text" name="name" placeholder="Digite o seu nome completo" required>
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" name="email" placeholder="Digite o seu email" required>
+                <label for="message">
+                    Especificações do Produto
+                </label>
+                <textarea class="boxProduto" name="message" placeholder="Digite o número do produto, quantidade, tamanho e cor. &#010Ex.: Tapete Redondo nº1, 2 peças, 80cm, vermelho." required></textarea>
+                <label for="message">
+                    Tire suas Dúvidas
+                </label>
+                <textarea name="message" placeholder="Mande uma mensagem ao vendedor (opcional)"></textarea>
+            <input type="hidden" name="_autoresponse" value="Obrigada por nos contatar, logo retornaremos com mais detalhes. Tenha um ótimo dia!">
+            <input type="hidden" name="_next" value="https://mcastelanp.github.io/Croches-Da-Marcia/">
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="back-to-top">
+            <img src="../images/up-arrow.png" alt="">
+        </button>
+    </main>
+    <footer id="bottom">
+        <article>
+            <section>
+                <img class="logo" src="../images/logoCroche3.png" alt="Crochês da Márcia">
+                <p>Santo Antônio, Criciúma - SC</p>
+                <p>CEP 88809-280</p>
+            </section>
+            <section class="sectionAtendimento">
+                <h3>Atendimento</h3>
+                <p>(48) 99147-0999</p>
+                <p>WhatsApp</p>
+                <p id="horarioAtendimento">Seg. a sex. das 8:30 às 17:30</p>
+                <a href="mailto:marciadhyana@gmail.com">
+                    <img src="../images/gmail.png" alt="Email para contato">
+                </a>
+            </section>
+        </article>
+        <section>
+            <p>© 2022 Crochês da Márcia. Todos os direitos reservados. Proibida reprodução total ou parcial.</p> 
+        </section>
+    </footer>
+</body>
+</html>

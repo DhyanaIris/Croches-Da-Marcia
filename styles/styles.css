@@ -1,0 +1,416 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Tai+Le:regular);
+
+@import url(https://fonts.googleapis.com/css?family=Merienda:300,regular,500,600,700,800,900);
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body, h1, h2, h3, p, ul, li, a, button, form, textarea {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Noto Sans Tai Le';
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: #028090;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header, footer, .info{
+    background-color: #00a896;
+    padding: 10px;
+    box-shadow: 7px 7px 10px #67b2bc;   
+}
+
+header article, footer article {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+header article section{
+    margin: 0px 30px;
+}
+
+header article section a {
+    display: flex;
+    align-items: center; 
+}
+
+header article section a img{
+    width: 25%;
+}
+
+header article section a p {
+    margin: 0;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Merienda';
+}
+
+nav {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px;
+}
+
+#menu li {
+    margin: 0px 10px;
+}
+
+#menu li a {
+    color: #FFF;
+    padding: 10px;
+    transition: background .3s;
+    border-radius: 10px;
+}
+
+#menu li a:hover {
+    background-color: #02c39a;
+}
+
+article section {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+button {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 20px;
+    width: 15%;
+    background-color: #00a896;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #02c39a;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer article {
+    width: 50%;
+    margin: auto;
+}
+
+footer section p, #horarioAtendimento{
+    font-weight: normal;
+    font-size: 14px;
+    color: #FFF;
+}
+
+/* Formulário  AJEITAR*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    margin-top: 20px;
+}
+
+form input, form textarea, form label {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 24px;
+}
+
+input, textarea{
+    font-size: inherit;
+    padding: 10px;
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #028090;
+    outline-color: #028090;
+}
+
+textarea {
+    height: 150px;
+    text-align: justify;
+    color: #000;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 15px;
+}
+
+/* Class página formulário */
+.boxProduto {
+    height: 80px;
+}
+
+/* Class página index */
+.info {
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.info h1, .info h3 {
+    color: #FFF;
+}
+
+.nomeLista h1{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #00a896;
+    width: 90%;
+}
+
+.listaProdutos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+}
+
+.listaProdutos section {
+    flex: 20%;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #c4f5ea;
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 20px;
+    transition: 0.4s;
+}
+
+.listaProdutos section:hover{
+    animation-name: animBoxShadow;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    transform: scale(1.12);
+}
+
+.listaProdutos img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.listaProdutos h3 {
+    padding: 20px;
+}
+
+.sectionAtendimento h3{
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #FFf;
+}
+
+.sectionAtendimento p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.sectionAtendimento img{
+    margin-top: 20px;
+}
+
+.logo{
+    width: 200px;
+}
+
+/* ID página index */
+#btnMobile {
+    display: none;
+    margin-top: 0px;
+    width: 0px;
+    padding: 0px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0px;
+}
+
+#menu li {
+    margin: 0px 10px;
+}
+
+#menu li a {
+    color: #FFF;
+    padding: 10px;
+    transition: background .3s;
+    border-radius: 10px;
+}
+
+#menu li a:hover {
+    background-color: #02c39a;
+}
+
+#horarioAtendimento {
+    margin-top: 30px;
+}
+
+#iconMenu {
+    width: 32px;
+    height: 32px;
+}
+
+/* CSS botão voltar ao topo*/
+.hide{
+    visibility: hidden;
+}
+
+#back-to-top {
+    background-color: #02c39a;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+}
+
+#back-to-top img{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+/* Animações */
+@keyframes animBoxShadow{
+    from{box-shadow: 1px 1px 1px #67b2bc;}
+    to{box-shadow: 7px 7px 15px #67b2bc; }
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px){
+    button {
+        width: 25%;
+    }
+    input, textarea{
+        width: 70%;
+    }
+    .listaProdutos section {
+        flex: 25%;
+    }
+    .listaProdutos section:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 888px){
+    footer article section{
+        margin: 25px;
+    }
+    button {
+        width:30%;
+    }
+    input, textarea{
+        width: 80%;
+    }
+    .listaProdutos section {
+        flex: 30%;
+    }
+    .nomeLista h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #btnMobile {
+        display: block;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        background-color: #00a896;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        box-shadow: 7px 7px 10px #48848b;
+    }
+    nav.active #menu{
+        height: calc(300px - 90px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu li {
+        padding: 16px 0;
+        margin: 0 16px;
+        border-bottom: 1px solid #FFF;
+    }
+    #menu li:hover {
+        background-color: #02c39a;
+    }
+    #menu li a:hover {
+        background-color: unset;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer article{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        width:50%;
+    }
+    .listaProdutos {
+        width: 100%;
+        margin: 0px;
+    }
+    .listaProdutos section {
+        flex: 50%;
+    }
+    .listaProdutos section:hover{
+        transform: scale(1);
+    }
+    #back-to-top {
+        width: 50px;
+        height: 50px;
+    }
+    #back-to-top img{
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+    }
+}
+
+
